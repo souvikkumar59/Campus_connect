@@ -22,12 +22,15 @@ const userSchema=new mongoose.Schema(
        type:String,
        enum:['student','admin'],
        default:'student',
+       required:true,
     },
     department:{
         type:String,
+        required:true,
     },
     year:{
         type:Number,
+        required:true,
     },
      isActive: {
       type: Boolean,
